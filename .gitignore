@@ -1,3 +1,15 @@
+# C/C++ compiled outputs
+*.exe
+*.out
+a.out
+
+# Extensionless root-level executables, e.g. `g++ test.cpp -o test`.
+/*
+!/*/
+!*.*
+
+# Keep local assistant/config files ignored after the extensionless rule.
 AGENTS.md
 .codex
 CLAUDE.md
+.claude/
