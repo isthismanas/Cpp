@@ -2,13 +2,13 @@
 
 using namespace std;
 
-int greet_user() {
+int greet_user(int i) {
   cout << "Hello World!" << endl;
-  return 0;
+  return i + 10;
 }
 
 int main() {
-  int result = greet_user();
+  int result = greet_user(57);
   cout << "Function returned: " << result << endl;
   return 0;
 }
