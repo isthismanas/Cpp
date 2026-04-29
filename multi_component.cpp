@@ -34,11 +34,40 @@ int main() {
       "I have to compile about 6-7 times before I fix all the highlighted bugs";
   bool fact2 = true;
   int fact3 = 0;
-
-  // Component 2: Formatted numeric output
   cout << "Interesting Fact 1: " << fact1 << endl;
   cout << "Interestung Fact 2: " << (fact2 ? "Yes" : "No") << endl;
   cout << "Interesting Fact 3: " << fact3 << endl;
+
+  // Component 2: Formatted numeric output
+  
+  cout << "---------- COMPONENT 2: FORMATTED NUMBERS ---------" << endl;
+
+// Create numeric variables
+  double pi = 3.14159265358979323846;
+  double e = 2.71828182845904523536;
+  double goldenRatio = 1.61803398874989484820;
+
+// Display with different precision
+  cout << "Default display:" << endl;
+  cout << "Pi = " << pi << endl;
+  cout << "e = " << e << endl;
+  cout << "Golden Ratio = " << goldenRatio << endl << endl;
+
+  cout << "With 2 decimal places:" << endl;
+  cout << fixed << setprecision(2);
+  cout << "Pi = " << pi << endl;
+  cout << "e = " << e << endl;
+  cout << "Golden Ratio = " << goldenRatio << endl << endl;
+
+  cout << "With 6 decimal places:" << endl;
+  cout << fixed << setprecision(6);
+  cout << "Pi = " << pi << endl;
+  cout << "e = " << e << endl;
+  cout << "Golden Ratio = " << goldenRatio << endl << endl;
+
+// Reset formatting
+  cout.unsetf(ios::fixed);
+  cout << setprecision(6);
   // Component 3: Table display
   // Program end
 
